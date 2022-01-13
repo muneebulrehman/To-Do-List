@@ -1,0 +1,92 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	margin: 5rem auto;
+	text-align: center;
+	font-size: 2rem;
+	color: orangered;
+}
+.underline {
+	height: 2px;
+	width: 20rem;
+	background-color: red;
+	margin: 0.75rem auto;
+}
+
+.app {
+	width: 50%;
+	border: 1px solid turquoise;
+	margin: 0 auto;
+}
+.list {
+	height: 4.5rem;
+	font-size: 1.8rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1rem;
+	transition: all 0.3s linear;
+	margin: 0 2rem;
+}
+.list:not(:last-child) {
+	border-bottom: 2px solid rgb(74, 141, 134);
+}
+.list:hover {
+	transform: translateX(4px) translateY(4px) translateZ(15px)
+		perspective(1000px);
+	box-shadow: 5px 5px 10px rgb(62, 136, 129);
+}
+.buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.button {
+	background: transparent;
+	border: none;
+	font-size: 1.2rem;
+	padding: 0.25rem;
+}
+.button:hover {
+	cursor: pointer;
+	border: 1px solid pink;
+	background-color: lightpink;
+}
+.checkbox {
+	height: 1.5rem;
+	width: 1.5rem;
+	cursor: pointer;
+}
+
+.add {
+	margin: 4rem auto;
+}
+.add-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	color: orangered;
+	font-size: 1.2rem;
+	position: relative;
+}
+.add-item {
+	width: 30rem;
+	height: 4rem;
+	border: 3px solid teal;
+	font-size: 1.6rem;
+}
+.add-btn {
+	background-color: transparent;
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+	border: 2px solid lightseagreen;
+	border-radius: 5px;
+}
