@@ -118,7 +118,7 @@ header {
 	.list {
 		height: fit-content;
 		font-size: 0.875;
-		padding: 0 0.25rem;
+		padding: 0.5rem 0.25rem;
 		margin: 0;
 		width: 100%;
 	}
