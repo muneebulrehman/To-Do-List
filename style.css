@@ -21,10 +21,11 @@ header {
 
 .app {
 	width: 50%;
-	border: 1px solid turquoise;
+	/* border: 1px solid turquoise; */
 	margin: 0 auto;
 }
 .list {
+	position: relative;
 	height: 4.5rem;
 	font-size: 1.8rem;
 	display: flex;
@@ -43,6 +44,9 @@ header {
 		perspective(1000px);
 	box-shadow: 5px 5px 10px rgb(62, 136, 129);
 }
+.content {
+	max-width: 20rem;
+}
 .buttons {
 	display: flex;
 	flex-direction: column;
@@ -53,16 +57,21 @@ header {
 	border: none;
 	font-size: 1.2rem;
 	padding: 0.25rem;
+	background-color: #ffc900;
+	border-radius: 4px;
 }
 .button:hover {
 	cursor: pointer;
-	border: 1px solid pink;
-	background-color: lightpink;
+	border: 1px solid #fff89a;
+	background-color: #fff89a;
 }
 .checkbox {
 	height: 1.5rem;
 	width: 1.5rem;
 	cursor: pointer;
+}
+.line-through {
+	text-decoration: line-through;
 }
 
 .add {
@@ -75,13 +84,13 @@ header {
 	gap: 2rem;
 	color: orangered;
 	font-size: 1.2rem;
-	position: relative;
 }
 .add-item {
 	width: 30rem;
 	height: 4rem;
 	border: 3px solid teal;
 	font-size: 1.6rem;
+	padding-left: 0.5rem;
 }
 .add-btn {
 	background-color: transparent;
@@ -89,4 +98,67 @@ header {
 	font-size: 1.5rem;
 	border: 2px solid lightseagreen;
 	border-radius: 5px;
+	cursor: pointer;
+}
+.overlay {
+	max-width: 30rem;
+	height: 3rem;
+	font-size: 1.85rem;
+}
+
+.hidden {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.app {
+		width: 95%;
+		margin: 0 auto;
+	}
+	.list {
+		height: fit-content;
+		font-size: 0.875;
+		padding: 0 0.25rem;
+		margin: 0;
+		width: 100%;
+	}
+	.date {
+		font-size: 0.75rem;
+	}
+	.content {
+		max-width: 12rem;
+		font-size: 1.2rem;
+	}
+	.buttons {
+		gap: 0.1rem;
+	}
+	.button {
+		font-size: 0.875rem;
+		padding: 0.1rem;
+	}
+	.overlay {
+		width: 10rem;
+		height: fit-content;
+		font-size: 1.2rem;
+	}
+	.add-container {
+		flex-direction: column;
+	}
+	.add-item {
+		max-width: 18rem;
+		height: 3rem;
+	}
+	.add-btn {
+		padding: 0.5rem;
+		font-size: 1rem;
+		margin-left: 1rem;
+	}
+	.checkbox {
+		height: 1rem;
+		width: 1rem;
+		cursor: pointer;
+	}
+	.overlay {
+		left: 2rem;
+	}
 }
