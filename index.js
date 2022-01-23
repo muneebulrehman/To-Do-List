@@ -3,7 +3,6 @@ const list = document.querySelector('.list');
 const addbtn = document.querySelector('.add-btn');
 const input = document.querySelector('.add-item');
 const container = document.querySelector('.app');
-let array;
 
 class AddData {
 	#array = [];
