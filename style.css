@@ -35,9 +35,9 @@ header {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 1rem;
+	padding: 0 0.5rem;
 	transition: all 0.3s linear;
-	margin: 0 2rem;
+	margin: 0 0.5rem;
 }
 .list:not(:last-child) {
 	border-bottom: 2px solid rgb(74, 141, 134);
@@ -146,7 +146,10 @@ button:hover::before {
 	}
 	.content {
 		max-width: 12rem;
+		word-wrap: wrap;
 		font-size: 1.2rem;
+		margin-left: 1rem;
+		text-transform: capitalize;
 	}
 	.buttons {
 		gap: 0.25rem;
@@ -176,8 +179,8 @@ button:hover::before {
 		height: 3rem;
 	}
 	.checkbox {
-		height: 1rem;
-		width: 1rem;
+		height: 2rem;
+		width: 2rem;
 		cursor: pointer;
 	}
 	.overlay {
