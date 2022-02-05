@@ -145,7 +145,7 @@ button:hover::before {
 		font-size: 0.75rem;
 	}
 	.content {
-		max-width: 10rem;
+		max-width: 12rem;
 		word-wrap: wrap;
 		font-size: 1.2rem;
 		margin-left: 1rem;
