@@ -105,9 +105,6 @@ class List {
 			month: '2-digit',
 			year: 'numeric',
 			day: '2-digit',
-			hour: '2-digit',
-			minute: '2-digit',
-			hour12: true,
 		};
 
 		const time = Intl.DateTimeFormat([], options).format(now);
