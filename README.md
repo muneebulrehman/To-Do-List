@@ -1,7 +1,7 @@
 # To-DO List.
 
 ## Live Demo
- [@Link](https://muneebulrehman.github.io/To-Do-List/)
+ [Live Link](https://muneebulrehman.github.io/To-Do-List/)
 
 Additional description about the project and its features.
 - Can add and remove and edit each list item.
